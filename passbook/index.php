@@ -1,6 +1,9 @@
 <html>
 <head>
 	<style>
+		div {border: 1px solid #611111; width 400:px;
+			background: #efffef; padding:10px; border-radius: 15px;}
+			
 		form { border: 1px solid #61111; width: 400px; 
 			   padding: 10x; background: #ccefff; 
 			   border-radius: 15px; }
@@ -11,6 +14,11 @@
 		
 </head>
 <body>
+	<?php
+		if ($_GET['message']!="") { 
+			print "<div>".$_GET['message']."</div>";
+		}
+	?>
 	<h1>Free drink bonus program:</h1><br/>
 	<form action="getpass.php" method=post>
 	<h2>Bonus game question:</h2>
